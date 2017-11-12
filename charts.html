@@ -4,7 +4,7 @@
 <!-- Mirrored from demo.flatlogic.com/sing-wrapbootstrap-3.8.0/ajax-bootstrap3/charts.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Nov 2017 07:09:15 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-    <title>Sing - Charts</title>
+    <title>ePHC - Ondo State - Charts</title>
     <link href="css/application.min.css" rel="stylesheet">
     <!-- as of IE9 cannot parse css files with more that 4K classes separating in two files -->
     <!--[if IE 9]>
@@ -34,7 +34,7 @@
     <!-- need this .js class to initiate slimscroll -->
     <div class="js-sidebar-content">
         <header class="logo hidden-xs">
-            <a href="index-2.html">sing</a>
+            <a href="index.php"><span style="color:red;text-transform:none;font-size: 10px">e´</span>PHC</a>
         </header>
         <!-- seems like lots of recent admin template have this feature of user info in the sidebar.
              looks good, so adding it and enhancing with notifications -->
@@ -49,39 +49,29 @@
                     13
                 </span>
                 &nbsp;
-                Philip <strong>Smith</strong>
+                Femi <strong>Olapegba</strong>
                 <b class="caret"></b>
             </a>
             <!-- #notifications-dropdown-menu goes here when screen collapsed to xs or sm -->
         </div>
         <!-- main notification links are placed inside of .sidebar-nav -->
         <ul class="sidebar-nav">
-            <li>
+            <li class="active">
                 <!-- an example of nested submenu. basic bootstrap collapse component -->
-                <a class="collapsed" href="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar">
+                <a href="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar">
                     <span class="icon">
                         <i class="fa fa-desktop"></i>
                     </span>
                     Dashboard
                     <i class="toggle fa fa-angle-down"></i>
                 </a>
-                <ul id="sidebar-dashboard" class="collapse">
-                    <li><a href="index-2.html">Dashboard</a></li>
-                    <li><a href="widgets.html">Widgets</a></li>
+                <ul id="sidebar-dashboard" class="collapse in">
+                    <li class="active"><a href="index-2.html">Dashboard</a></li>
+                    <li><a href="#">Profile</a></li>
                 </ul>
             </li>
+
             <li>
-                <a href="inbox.html">
-                    <span class="icon">
-                        <i class="fa fa-envelope"></i>
-                    </span>
-                    Email
-                    <span class="label label-danger">
-                        9
-                    </span>
-                </a>
-            </li>
-            <li class="active">
                 <a href="charts.html">
                     <span class="icon">
                         <i class="glyphicon glyphicon-stats"></i>
@@ -89,177 +79,46 @@
                     Charts
                 </a>
             </li>
-            <li>
-                <a href="profile.html">
-                    <span class="icon">
-                        <i class="glyphicon glyphicon-user"></i>
-                    </span>
-                    Profile
-                    <sup class="text-warning fw-semi-bold">
-                        new
-                    </sup>
-                </a>
-            </li>
-        </ul>
-        <!-- every .sidebar-nav may have a title -->
-        <h5 class="sidebar-nav-title">Template <a class="action-link" href="#"><i class="glyphicon glyphicon-refresh"></i></a></h5>
-        <ul class="sidebar-nav">
-            <li>
+            <li >
                 <!-- an example of nested submenu. basic bootstrap collapse component -->
-                <a class="collapsed" href="#sidebar-forms" data-toggle="collapse" data-parent="#sidebar">
+                <a href="#sidebar-dashboard1" data-toggle="collapse" data-parent="#sidebar">
                     <span class="icon">
-                        <i class="glyphicon glyphicon-align-right"></i>
+                        <i class="fa fa-envelope"></i>
                     </span>
-                    Forms
+                    Report
                     <i class="toggle fa fa-angle-down"></i>
                 </a>
-                <ul id="sidebar-forms" class="collapse">
-                    <li><a href="form_elements.html">Form Elements</a></li>
-                    <li><a href="form_validation.html">Form Validation</a></li>
-                    <li><a href="form_wizard.html">Form Wizard</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="collapsed" href="#sidebar-ui" data-toggle="collapse" data-parent="#sidebar">
-                    <span class="icon">
-                        <i class="glyphicon glyphicon-tree-conifer"></i>
-                    </span>
-                    UI Elements
-                    <i class="toggle fa fa-angle-down"></i>
-                </a>
-                <ul id="sidebar-ui" class="collapse">
-                    <li><a href="ui_components.html">Components</a></li>
-                    <li><a href="ui_notifications.html">Notifications</a></li>
-                    <li><a href="ui_icons.html">Icons</a></li>
-                    <li><a href="ui_buttons.html">Buttons</a></li>
-                    <li><a href="ui_tabs_accordion.html">Tabs & Accordion</a></li>
-                    <li><a href="ui_list_groups.html">List Groups</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="grid.html">
-                    <span class="icon">
-                        <i class="glyphicon glyphicon-th"></i>
-                    </span>
-                    Grid
-                </a>
-            </li>
-            <li>
-                <a class="collapsed" href="#sidebar-maps" data-toggle="collapse" data-parent="#sidebar">
-                    <span class="icon">
-                        <i class="glyphicon glyphicon-map-marker"></i>
-                    </span>
-                    Maps
-                    <i class="toggle fa fa-angle-down"></i>
-                </a>
-                <ul id="sidebar-maps" class="collapse">
-                    <!-- data-no-pjax turns off pjax loading for this link. Use in case of complicated js loading on the
-                         target page -->
-                    <li><a href="maps_google.html" data-no-pjax>Google Maps</a></li>
-                    <li><a href="maps_vector.html">Vector Maps</a></li>
-                </ul>
-            </li>
-            <li>
-                <!-- an example of nested submenu. basic bootstrap collapse component -->
-                <a class="collapsed" href="#sidebar-tables" data-toggle="collapse" data-parent="#sidebar">
-                    <span class="icon">
-                        <i class="fa fa-table"></i>
-                    </span>
-                    Tables
-                    <i class="toggle fa fa-angle-down"></i>
-                </a>
-                <ul id="sidebar-tables" class="collapse">
-                    <li><a href="tables_basic.html">Tables Basic</a></li>
-                    <li><a href="tables_dynamic.html">Tables Dynamic</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="collapsed" href="#sidebar-extra" data-toggle="collapse" data-parent="#sidebar">
-                    <span class="icon">
-                        <i class="fa fa-leaf"></i>
-                    </span>
-                    Extra
-                    <i class="toggle fa fa-angle-down"></i>
-                </a>
-                <ul id="sidebar-extra" class="collapse">
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="invoice.html">Invoice</a></li>
-                    <li><a href="login.html" target="_blank" data-no-pjax>Login Page</a></li>
-                    <li><a href="error.html" target="_blank" data-no-pjax>Error Page</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="search.html">Search Results</a></li>
-                    <li><a href="time_line.html" data-no-pjax>Time Line</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="collapsed" href="#sidebar-levels" data-toggle="collapse" data-parent="#sidebar">
-                    <span class="icon">
-                        <i class="fa fa-folder-open"></i>
-                    </span>
-                    Menu Levels
-                    <i class="toggle fa fa-angle-down"></i>
-                </a>
-                <ul id="sidebar-levels" class="collapse">
-                    <li><a href="#">Level 1</a></li>
-                    <li>
-                        <a class="collapsed" href="#sidebar-sub-levels" data-toggle="collapse" data-parent="#sidebar-levels">
-                            Level 2
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-sub-levels" class="collapse">
-                            <li><a href="#">Level 3</a></li>
-                            <li><a href="#">Level 3</a></li>
-                        </ul>
-                    </li>
+                <ul id="sidebar-dashboard1" class="collapse in">
+                    <li class="active"><a href="index-2.html">Report</a></li>
+                    <li><a href="#">Service Comparison</a></li>
                 </ul>
             </li>
         </ul>
-        <h5 class="sidebar-nav-title">Labels <a class="action-link" href="#"><i class="glyphicon glyphicon-plus"></i></a></h5>
-        <!-- some styled links in sidebar. ready to use as links to email folders, projects, groups, etc -->
-        <ul class="sidebar-labels">
-            <li>
-                <a href="#">
-                    <!-- yep, .circle again -->
-                    <i class="fa fa-circle text-warning mr-xs"></i>
-                    <span class="label-name">My Recent</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-circle text-gray mr-xs"></i>
-                    <span class="label-name">Starred</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-circle text-danger mr-xs"></i>
-                    <span class="label-name">Background</span>
-                </a>
-            </li>
-        </ul>
+    
         <h5 class="sidebar-nav-title">Projects</h5>
         <!-- A place for sidebar notifications & alerts -->
         <div class="sidebar-alerts">
             <div class="alert fade in">
                 <a href="#" class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
-                <span class="text-white fw-semi-bold">Sales Report</span> <br>
+                <span class="text-white fw-semi-bold">Total Income generated</span> <br>
                 <div class="progress progress-xs mt-xs mb-0">
                     <div class="progress-bar progress-bar-gray-light" style="width: 16%"></div>
                 </div>
-                <small>Calculating x-axis bias... 65%</small>
+                <small>Income... 65%</small>
             </div>
             <div class="alert fade in">
                 <a href="#" class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
-                <span class="text-white fw-semi-bold">Personal Responsibility</span> <br>
+                <span class="text-white fw-semi-bold">Income per service</span> <br>
                 <div class="progress progress-xs mt-xs mb-0">
                     <div class="progress-bar progress-bar-danger" style="width: 23%"></div>
                 </div>
-                <small>Provide required notes</small>
+                <!-- <small>Provide required notes</small> -->
             </div>
         </div>
     </div>
 </nav>
 <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
+
 <nav class="page-controls navbar navbar-default">
     <div class="container-fluid">
         <!-- .navbar-header contains links seen on xs & sm screens -->
@@ -305,161 +164,19 @@
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                     <div class="input-group input-group-no-border">
-                        <span class="input-group-addon">
-                            <i class="fa fa-search"></i>
-                        </span>
-                        <input class="form-control" type="text" placeholder="Search Dashboard">
+                    <span class="input-group-addon">
+                        <i class="fa fa-search"></i>
+                    </span>
+                        <input class="form-control" type="text" placeholder="Search Details">
                     </div>
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle dropdown-toggle-notifications" id="notifications-dropdown-toggle" data-toggle="dropdown">
-                        <span class="thumb-sm avatar pull-left">
-                            <img class="img-circle" src="demo/img/people/a5.jpg" alt="...">
-                        </span>
-                        &nbsp;
-                        Philip <strong>Smith</strong>&nbsp;
-                        <span class="circle bg-warning fw-bold">
-                            13
-                        </span>
-                        <b class="caret"></b></a>
-                    <!-- ready to use notifications dropdown.  inspired by smartadmin template.
-                         consists of three components:
-                         notifications, messages, progress. leave or add what's important for you.
-                         uses Sing's ajax-load plugin for async content loading. See #load-notifications-btn -->
-                    <div class="dropdown-menu animated fadeInUp" id="notifications-dropdown-menu">
-                        <section class="panel notifications">
-                            <header class="panel-heading">
-                                <div class="text-align-center mb-sm">
-                                    <strong>You have 13 notifications</strong>
-                                </div>
-                                <div class="btn-group btn-group-sm btn-group-justified" id="notifications-toggle" data-toggle="buttons">
-                                    <label class="btn btn-default active">
-                                        <!-- ajax-load plugin in action. setting data-ajax-load & data-ajax-target is the
-                                             only requirement for async reloading -->
-                                        <input type="radio" checked
-                                               data-ajax-trigger="change"
-                                               data-ajax-load="demo/ajax/notifications.html"
-                                               data-ajax-target="#notifications-list"> Notifications
-                                    </label>
-                                    <label class="btn btn-default">
-                                        <input type="radio"
-                                               data-ajax-trigger="change"
-                                               data-ajax-load="demo/ajax/messages.html"
-                                               data-ajax-target="#notifications-list"> Messages
-                                    </label>
-                                    <label class="btn btn-default">
-                                        <input type="radio"
-                                               data-ajax-trigger="change"
-                                               data-ajax-load="demo/ajax/progress.html"
-                                               data-ajax-target="#notifications-list"> Progress
-                                    </label>
-                                </div>
-                            </header>
-                            <!-- notification list with .thin-scroll which styles scrollbar for webkit -->
-                            <div id="notifications-list" class="list-group thin-scroll">
-                                <div class="list-group-item">
-                                    <span class="thumb-sm pull-left mr clearfix">
-                                        <img class="img-circle" src="demo/img/people/a3.jpg" alt="...">
-                                    </span>
-                                    <p class="no-margin overflow-hidden">
-                                        1 new user just signed up! Check out
-                                        <a href="#">Monica Smith</a>'s account.
-                                        <time class="help-block no-margin">
-                                            2 mins ago
-                                        </time>
-                                    </p>
-                                </div>
-                                <a class="list-group-item" href="#">
-                                    <span class="thumb-sm pull-left mr">
-                                        <i class="glyphicon glyphicon-upload fa-lg"></i>
-                                    </span>
-                                    <p class="text-ellipsis no-margin">
-                                        2.1.0-pre-alpha just released. </p>
-                                    <time class="help-block no-margin">
-                                        5h ago
-                                    </time>
-                                </a>
-                                <a class="list-group-item" href="#">
-                                    <span class="thumb-sm pull-left mr">
-                                        <i class="fa fa-bolt fa-lg"></i>
-                                    </span>
-                                    <p class="text-ellipsis no-margin">
-                                        Server load limited. </p>
-                                    <time class="help-block no-margin">
-                                        7h ago
-                                    </time>
-                                </a>
-                                <div class="list-group-item">
-                                    <span class="thumb-sm pull-left mr clearfix">
-                                        <img class="img-circle" src="demo/img/people/a5.jpg" alt="...">
-                                    </span>
-                                    <p class="no-margin overflow-hidden">
-                                        User <a href="#">Jeff</a> registered
-                                        &nbsp;&nbsp;
-                                        <button class="btn btn-xs btn-success">Allow</button>
-                                        <button class="btn btn-xs btn-danger">Deny</button>
-                                        <time class="help-block no-margin">
-                                            12:18 AM
-                                        </time>
-                                    </p>
-                                </div>
-                                <div class="list-group-item">
-                                    <span class="thumb-sm pull-left mr">
-                                        <i class="fa fa-shield fa-lg"></i>
-                                    </span>
-                                    <p class="no-margin overflow-hidden">
-                                        Instructions for changing your Envato Account password. Please
-                                        check your account <a href="#">security page</a>.
-                                        <time class="help-block no-margin">
-                                            12:18 AM
-                                        </time>
-                                    </p>
-                                </div>
-                                <a class="list-group-item" href="#">
-                                    <span class="thumb-sm pull-left mr">
-                                        <span class="rounded bg-primary rounded-lg">
-                                            <i class="fa fa-facebook text-white"></i>
-                                        </span>
-                                    </span>
-                                    <p class="text-ellipsis no-margin">
-                                        New <strong>76</strong> facebook likes received.</p>
-                                    <time class="help-block no-margin">
-                                        15 Apr 2014
-                                    </time>
-                                </a>
-                                <a class="list-group-item" href="#">
-                                    <span class="thumb-sm pull-left mr">
-                                        <span class="circle circle-lg bg-gray-dark">
-                                            <i class="fa fa-circle-o text-white"></i>
-                                        </span>
-                                    </span>
-                                    <p class="text-ellipsis no-margin">
-                                        Dark matter detected.</p>
-                                    <time class="help-block no-margin">
-                                        15 Apr 2014
-                                    </time>
-                                </a>
-                            </div>
-                            <footer class="panel-footer text-sm">
-                                <!-- ajax-load button. loads demo/ajax/notifications.php to #notifications-list
-                                     when clicked -->
-                                <button class="btn btn-xs btn-link pull-right"
-                                        id="load-notifications-btn"
-                                        data-ajax-load="demo/ajax/notifications-2.html"
-                                        data-ajax-target="#notifications-list"
-                                        data-loading-text="<i class='fa fa-refresh fa-spin mr-xs'></i> Loading...">
-                                    <i class="fa fa-refresh"></i>
-                                </button>
-                                <span class="fs-mini">Synced at: 21 Apr 2014 18:36</span>
-                            </footer>
-                        </section>
-                    </div>
-                </li>
+                
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-cog fa-lg"></i>
+                        Femi Olapegba (<b>Akure south</b>)
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="glyphicon glyphicon-user"></i> &nbsp; My Account</a></li>
@@ -470,7 +187,7 @@
                         <li><a href="login.html"><i class="fa fa-sign-out"></i> &nbsp; Log Out</a></li>
                     </ul>
                 </li>
-                <li>
+               <!--  <li>
                     <a href="#" data-toggle="chat-sidebar">
                         <i class="fa fa-globe fa-lg"></i>
                     </a>
@@ -485,7 +202,7 @@
                             <p class="text">Hey! What's up?</p>
                         </div>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -746,7 +463,7 @@
                 <section class="widget">
                     <header>
                         <h4>
-                            Sparkline <span class="fw-semi-bold">Pie Charts</span>
+                            Total revenue <span class="fw-semi-bold">per department</span>
                         </h4>
                         <div class="widget-controls">
                             <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
@@ -768,7 +485,7 @@
                 <section class="widget">
                     <header>
                         <h4>
-                            Morris <span class="fw-semi-bold">Donut Charts</span>
+                             <span class="fw-semi-bold">Most performing services</span>
                         </h4>
                         <div class="widget-controls">
                             <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
@@ -780,11 +497,8 @@
                         <div id="morris3">
                         </div>
                         <p class="fs-mini text-muted">
-                            Donuts a great for representing some parted information like traffice sources,
-                            disk partitions, etc.
-                            This really couldn't be easier. Create a Donut chart using <code>Morris.Donut(options)</code>,
-                            with only few options.
-                        </p>
+                            The figures are in thousands
+                        </p> 
                     </div>
                 </section>
             </div>
@@ -795,7 +509,7 @@
                 <section class="widget">
                     <header>
                         <h4>
-                            Morris <span class="fw-semi-bold">Line Charts</span>
+                            <span class="fw-semi-bold">Chart to compare services </span>
                         </h4>
                         <div class="widget-controls">
                             <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
@@ -818,7 +532,7 @@
                 <section class="widget">
                     <header>
                         <h4>
-                            Realtime <span class="fw-semi-bold">Rickshaw</span>
+                            <span class="fw-semi-bold">Total number of Patient</span>
                         </h4>
                         <div class="widget-controls">
                             <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
@@ -827,13 +541,13 @@
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted mb-lg">
+                        <!--<p class="fs-mini text-muted mb-lg">
                             Rickshaw provides the elements you need to create interactive graphs: renderers, legends,
                             hovers, range selectors, etc. You put the pieces together.
                             It's all based on <span class="fw-semi-bold">d3</span> underneath, so graphs are drawn with standard SVG and styled with CSS.
                             Customize all you like with techniques you already know.
-                        </p>
-                        <h4>720 Users</h4>
+                        </p> -->
+                        <h4>720 Patients</h4>
                         <div class="progress progress-xs">
                             <div class="progress-bar progress-bar-gray-light" style="width: 60%;"></div>
                         </div>
@@ -842,7 +556,7 @@
                                 <i class="fa fa-circle"></i>
                             </span>
                             &nbsp;
-                            Target <span class="fw-semi-bold">820</span> users
+                            Target <span class="fw-semi-bold">820</span> Patients
                             is <span class="fw-semi-bold">96%</span> reached.
                         </p>
                         <div id="rickshaw" class="chart-overflow-bottom"></div>
@@ -850,40 +564,11 @@
                 </section>
             </div>
             <div class="col-md-6 col-lg-3">
-                <section class="widget">
-                    <header>
-                        <h4>
-                            Line <span class="fw-semi-bold">Sparkline</span>
-                        </h4>
-                        <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
-                        </div>
-                    </header>
-                    <div class="widget-body">
-                        <p class="fs-mini text-muted">
-                            Each example displayed below takes just 1 line of HTML or javascript to generate.
-                        </p>
-                        <div class="stats-row mt">
-                            <div class="stat-item">
-                                <h6 class="name">Overall Growth</h6>
-                                <p class="value">43.75%</p>
-                            </div>
-                            <div class="stat-item">
-                                <h6 class="name">Montly</h6>
-                                <p class="value">86.34%</p>
-                            </div>
-                        </div>
-                        <p class="text-muted fs-mini">
-                            <span class="fw-semi-bold">17% higher</span> than last month</p>
-                        <div id="sparkline1" class="chart-overflow-bottom"></div>
-                    </div>
-                </section>
+                
                  <section class="widget">
                     <header>
                         <h4>
-                            Easy <span class="fw-semi-bold">Pie Charts</span>
+                            Chart <span class="fw-semi-bold">for services</span>
                         </h4>
                         <div class="widget-controls">
                             <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
@@ -898,15 +583,13 @@
                             </div>
                         </div>
                         <p class="fs-mini text-muted">
-                            Easy pie chart is a jQuery plugin that uses the canvas element to render simple pie charts
-                            for single values. These charts are highly customizable, very easy to implement, scale to
-                            the resolution of the display of the client to provide sharp charts even on retina displays.
+                            To know the percentage of revenue generated by services under imaging 
                         </p>
                     </div>
                 </section>
             </div>
         </div>
-        <div class="row">
+        <!--<div class="row">
             <div class="col-md-7 col-lg-8">
                 <section class="widget">
                     <header>
@@ -949,7 +632,10 @@
                     </div>
                 </section>
             </div>
-        </div>
+        </div> -->
+
+
+
         <div class="row">
             <div class="col-md-6">
                 <section class="widget">
@@ -1028,7 +714,7 @@
                 </section>
                 
             </div>
-        </div>
+        </div>  
         
     </main>
 </div>

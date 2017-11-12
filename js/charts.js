@@ -322,23 +322,22 @@ $(function(){
         $('#morris1').css({height: '343px'}); //safari svg height fix
         Morris.Line({
             element: 'morris1',
-            resize: false,
+            resize: true,
             data: [
-                { y: 'January', a: 100, b: 90 },
-                { y: 'Febuary', a: 40, b: 80 },
-                { y: 'March', a: 59, b: 73 },
-                { y: 'April', a: 90, b: 40  },
-                { y: 'May', a: 40, b: 60  },
-                { y: 'June',a: 120, b: 90  },
-                { y: 'July', a: 100, b: 90 }
+                { y: "2006", a: 100, b: 90, c:80 },
+                { y: '2007', a: 75,  b: 65, c:55 },
+                { y: '2008', a: 50,  b: 40, c:30 },
+                { y: '2009', a: 75,  b: 65, c:55 },
+                { y: '2010', a: 50,  b: 40, c:30 },
+                { y: '2011', a: 75,  b: 65, c:55 },
+                { y: '2012', a: 100, b: 90, c:80 }
             ],
             xkey: 'y',
-            ykeys: ['a', 'b'],
-            labels: ['Pharmacy', 'Imaging'],
-            lineColors: ['#ffd700', '#0000ff']
+            ykeys: ['a', 'b','c'],
+            labels: ['Imaging', 'Procedures','Laboratory'],
+            lineColors: ['#88C4EE', '#f0b518', '#F7653F' ]
         });
     }
-
     function initMorris2(){
         $('#morris2').css({height: '343px'}); //safari svg height fix
         Morris.Area({
@@ -366,9 +365,9 @@ $(function(){
         Morris.Donut({
             element: 'morris3',
             data: [
-                {label: "Download Sales", value: 12},
-                {label: "In-Store Sales", value: 30},
-                {label: "Mail-Order Sales", value: 20}
+                {label: "Imaging", value: 12},
+                {label: "Procedures", value: 30},
+                {label: "Laboratory", value: 20}
             ],
             colors: ['#F7653F', '#F8C0A2', '#e6e6e6']
         });
